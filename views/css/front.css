@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container_video{
+    background-color: white;
+    height: 600px; width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container_content{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flying_logo{
+    position: relative;
+}
+
+.flying_img{
+    height: 180px;
+}
+
+.flying_text{
+    position: relative;
+    width: 80%;
+}
+
+.company_name {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 3em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.company_description {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.flying_button {
+    position: relative;
+}
+
+.video_displayed {
+    position: absolute;
+    top: -40%;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+.container_filter{
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    position: absolute;
+    background-color: rgba(255,255,255,0.1);
+}
+
+@media screen and (max-width: 576px) {
+
+    .flying_img{
+        height: 100px;
+    }
+
+    .company_name{
+        color: white;
+        font-size: 1.6em;
+        font-weight: bold;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    .company_description{
+        color: white;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .flying_text{
+        position: relative;
+        width: 80%;
+    }
+
+    iframe {
+        position: absolute;
+        width: 1200px;
+        left: -300px;
+    }
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+    .flying_img{
+        height: 140px;
+    }
+
+    .company_name{
+        color: white;
+        font-size: 1.6em;
+        font-weight: bold;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    .company_description{
+        color: white;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .flying_text{
+        position: relative;
+        width: 80%;
+    }
+
+    iframe {
+        position: absolute;
+        width: 1200px;
+        left: -200px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .flying_img{
+
+        height: 140px;
+    }
+
+    .company_name{
+        color: white;
+        font-size: 1.6em;
+        font-weight: bold;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    .company_description{
+        color: white;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .flying_text{
+        position: relative;
+        width: 80%;
+    }
+
+    iframe {
+        position: absolute;
+        width: 1200px;
+        left: -100px;
+    }
+}
+
+@media (min-width: 1025px) {
+
+    iframe {
+        position: absolute;
+        width: 100%;
+    }
+}
